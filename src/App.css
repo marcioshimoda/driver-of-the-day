@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'F1 Regular';
+  src: url('/public/fonts/Formula1-Regular_web_0.ttf');
+}
+
+@font-face {
+  font-family: 'F1 Bold';
+  src: url('/public/fonts/Formula1-Bold_web_0.ttf');
+}
+
+@font-face {
+  font-family: 'F1 Wide';
+  src: url('/public/fonts/Formula1-Wide_web_0.ttf');
+}
+
+/* estilo para a barra de ferramentas */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #111;
+  color: #fff;
+}
+
+.toolbar a {
+  font-family: F1 Regular;
+}
+
+.toolbar button {
+  width: 100px;
+  height: 25px;
+}
+
+h1 {
+  font-family: 'F1 Regular';
+  text-align: center;
+}
+
+body {
+  background-color: #eee;
+}
+
+/* estilo para o campo de pesquisa */
+.driver-input {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.driver-input input {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* estilo para a lista de pilotos */
+.driver-list {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 0;
+  list-style: none;
+}
+
+/* estilo para cada item da lista de pilotos */
+.driver-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.driver-list-item:last-child {
+  border-bottom: none;
+}
+
+.driver-list-item:hover {
+  background-color: #f2f2f2;
+}
+
+/* estilo para a seção de tentativas */
+.attempts {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 0;
+  list-style: none;
+}
+
+/* estilo para cada item da seção de tentativas */
+.attempts-item {
+  display: flex;
+  align-items: center;
+  height: 60px; /* altura da linha */
+  margin-bottom: 3px; /* espaço entre as linhas */
+  background-color: #ffffff;
+}
+
+.driver-image {
+  width: 60px; /* largura igual à altura da linha /
+  height: 60px; /* altura da linha */
+  border-radius: 50%; /* torna a imagem redonda */
+  background-color: #ddd; /* cor de fundo padrão */
+}
+
+.driver-name {
+  flex-grow: 1; /* ocupa todo o espaço restante */
+  margin-left: 10px; /* espaço entre a imagem e o nome */
+}
+
+.driver-info {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* espaço entre o nome e as informações */
+}
+
+.driver-info-titles,
+.driver-info-victories,
+.driver-info-poles,
+.driver-info-races,
+.driver-info-country {
+  width: 60px; /* largura igual à altura da linha */
+  height: 60px; /* altura da linha */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; /* espaço entre as informações */
+  border-radius: 50%;
+  background-color: #888;
+  color: #eee;  
+}
+
+.driver-info-country img {
+  border: 1px solid #eee;
+}
+
+.error {
+  background-color: red;
+}
+
+.success {
+  background-color: green;
+}
+
+.driver-info-titles .a,
+.driver-info-victories .a,
+.driver-info-poles .a,
+.driver-info-races .a {
+  margin-bottom: 5px; /* espaço entre a e b */
+}
+
+/* estilo para o modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.modal-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-message-driver {
+  margin-bottom: 20px;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0074d9;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  background-color: #0063aa;
+}
+
